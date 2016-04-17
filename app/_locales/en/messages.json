@@ -4,7 +4,7 @@
     "description": "The name of the application"
   },
   "appDescription": {
-    "message": "Pyload chrome client.",
+    "message": "Pyload remote app for chrome",
     "description": "The description of the application"
   }
 }

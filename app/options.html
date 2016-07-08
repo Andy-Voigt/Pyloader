@@ -10,8 +10,22 @@
     <!-- endbuild -->
 </head>
 <body>
-
-<h1>'Allo, 'Allo!</h1>
+<div class="option">
+    <select id="protocol">
+        <option value="http">http</option>
+        <option value="https">https</option>
+    </select>
+    <br>
+    <span>Address:</span>
+    <input type="text" id="address"/>
+    <span>Port</span>
+    <input type="text" id="port"/>
+    <span>Name:</span>
+    <input type="text" id="name"/>
+    <span>Password:</span>
+    <input type="password" id="password"/>
+    <button id="save">Save</button>
+</div>
 
 <!-- build:js scripts/options-vendor.js -->
 <!-- bower:js -->

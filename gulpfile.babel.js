@@ -1,9 +1,9 @@
 // generated on 2016-04-17 using generator-chrome-extension 0.5.6
-import gulp from 'gulp';
-import gulpLoadPlugins from 'gulp-load-plugins';
-import del from 'del';
-import runSequence from 'run-sequence';
-import {stream as wiredep} from 'wiredep';
+import gulp from "gulp";
+import gulpLoadPlugins from "gulp-load-plugins";
+import del from "del";
+import runSequence from "run-sequence";
+import {stream as wiredep} from "wiredep";
 
 const $ = gulpLoadPlugins();
 
@@ -11,6 +11,7 @@ gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
     'app/_locales/**',
+    'app/libs/*',
     '!app/scripts.babel',
     '!app/*.json',
     '!app/*.html',

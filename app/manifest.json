@@ -10,8 +10,10 @@
   "default_locale": "en",
   "background": {
     "scripts": [
+      "scripts/background/iconclicknavigation.js",
       "scripts/background/chromereload.js",
-      "scripts/background/clickandload.js"
+      "scripts/background/clickandload.js",
+      "libs/superagent.js"
     ]
   },
   "permissions": [
@@ -30,16 +32,13 @@
   ],
   "options_ui": {
     "page": "options.html",
-    "chrome_style": true,
-    "open_in_tab": true
+    "chrome_style": true
   },
   "browser_action": {
     "default_icon": {
       "19": "images/icon-19.png",
       "38": "images/icon-38.png"
-    },
-    "default_title": "pyloader",
-    "default_popup": "popup.html"
+    }
   },
   "web_accessible_resources": [
     "scripts/jdcheck.js"
